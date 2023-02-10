@@ -1,7 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 
-function Sidebar() {
+function Sidebar(props) {
   return (
     <div className="sidebar">
       <ul>
@@ -18,7 +18,7 @@ function Sidebar() {
           <a href="#">Blog</a>
         </li>
         <li>
-          <a href="#">Hello Mourad</a>
+          <a href="#">Hello {props.isChanged && props.name}</a>
         </li>
       </ul>
     </div>

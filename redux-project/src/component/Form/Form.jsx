@@ -1,15 +1,23 @@
 import React from "react";
 import "./Form.css";
 
-function Form() {
+function Form(props) {
   return (
-    <form>
+    <form onSubmit={props.addUsser}>
       <div className="form-group">
-        <input type="text" placeholder="Enter Name" />
+        <input
+          type="text"
+          placeholder="Enter Name"
+          onChange={(e) => props.setName(e.target.value)}
+        />
       </div>
 
       <div className="form-group">
-        <input type="email" placeholder="Enter Email" />
+        <input
+          type="email"
+          placeholder="Enter Email"
+          onChange={(e) => props.setEmail(e.target.value)}
+        />
       </div>
 
       <div className="form-group">
