@@ -1,0 +1,16 @@
+.sidebar {
+  width: 20%;
+  background-color: #f6f6f6;
+  height: 90vh;
+  padding: 10px;
+}
+
+.sidebar li a {
+  display: block;
+  color: #333;
+  padding: 7px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+}
